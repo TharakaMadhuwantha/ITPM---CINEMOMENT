@@ -14,26 +14,15 @@ function App() {
     <Router>
       <div className="container">
       <Navbar />
+      
       <br/>
-      <br/>
-      <br/>
-      <br/>
-      <br/>
-      <br/>
-      <br/>
-      <br/>
-      <br/>
-      <br/>
-      <br/>
-      <br/>
-      <br/>
-      <br/>
-      <br/>
+      <div style={{paddingTop:'300px'}}>
       <Route path="/" exact component={PackagesList} />
       <Route path="/edit/:id" component={EditPackage} />
       <Route path="/create" component={CreateExercise} />
       <Route path="/user" component={CreateUser} />
       <Route path="/select/:id" component={SelectPackage} />
+      </div>
       </div>
     </Router>
   );
