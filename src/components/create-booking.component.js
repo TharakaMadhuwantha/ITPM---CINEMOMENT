@@ -125,7 +125,7 @@ export default class CreateBooking extends Component {
         <div className="form-group">
           <label>Contactno: </label>
           <input 
-              type="text" 
+              type="number" 
               className="form-control"
               value={this.state.contactno}
               onChange={this.onChangeContactno}
