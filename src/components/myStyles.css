@@ -8,7 +8,7 @@
   width: 990px;
   height: 55px;
   left: 225px;
-  top: 208px;
+  top: 190px;
 }
 
 .overlap-group {
@@ -123,7 +123,7 @@ color: #000000;
 /* Header rect */
 .header-rect {
   position: absolute;
-height: 293px;
+height: 260px;
 left: 0%;
 right: 0%;
 top: 0px;
