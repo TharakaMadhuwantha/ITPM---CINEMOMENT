@@ -3,6 +3,8 @@ import "bootstrap/dist/css/bootstrap.min.css";
 import { BrowserRouter as Router, Route} from "react-router-dom";
 
 import Navbar from "./components/navbar.component"
+import Footer from "./components/footer.component";
+
 import PackagesList from "./components/packages-list.component";
 import CreateExercise from "./components/create-package.component";
 import CreateUser from "./components/create-user.component";
