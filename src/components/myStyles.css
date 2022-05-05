@@ -195,3 +195,235 @@ background: url(../logo.png);
 
 /* Change the background color of the dropdown button when the dropdown content is shown */
 .dropdown:hover .dropbtn {background-color: #3e8e41;}
+
+/*Footer*/
+@import url("https://fonts.googleapis.com/css?family=Roboto:400");
+
+.footer {
+  align-items: flex-start;
+  display: flex;
+  
+  min-width: 1440px;
+  padding: 0 0.5px;
+}
+
+.overlap-groupf {
+  align-items: flex-start;
+  position: relative;
+  height: 293px;
+  left: -0.07%;
+  right: 0.07%;
+  bottom: 0px;
+  top: 573px;
+  
+  background: linear-gradient(91.92deg, rgba(128, 145, 255, 0.66) -0.94%, rgba(114, 255, 143, 0.66) 100%);
+
+
+  background-size: 100% 100%;
+  display: flex;
+  height: 293px;
+  min-width: 1439px;
+  padding: 51px 58.5px;
+}
+
+.f_-categories {
+  align-items: center;
+  display: flex;
+  flex-direction: column;
+  min-height: 131px;
+  width: 135px;
+  
+}
+
+.categories {
+  letter-spacing: 0.1ch;
+  margin-right: 60px;
+  min-height: 21px;
+  width: 87px;
+}
+
+.booking-appointment-packages {
+  letter-spacing: 0;
+  line-height: 30.3px;
+  margin-right: 4px;
+  margin-top: 20px;
+  min-height: 90px;
+  width: 131px;
+}
+
+.f_-information {
+  align-items: flex-start;
+  display: flex;
+  flex-direction: column;
+  margin-left: 80px;
+  min-height: 101px;
+  width: 107px;
+}
+
+.informations {
+  letter-spacing: 0;
+  min-height: 21px;
+  width: 103px;
+}
+
+.faq-about-us {
+  letter-spacing: 0;
+  line-height: 30.3px;
+  margin-top: 20px;
+  min-height: 60px;
+  width: 101px;
+  margin-left: 10px;
+}
+
+.f_-useraccount {
+  align-items: flex-start;
+  display: flex;
+  flex-direction: column;
+  margin-left: 60px;
+  min-height: 71px;
+  width: 127px;
+}
+
+.user-account {
+  letter-spacing: 0;
+  min-height: 21px;
+  width: 108px;
+ /* margin-right: 70px;*/
+}
+
+.my-account {
+  letter-spacing: 0;
+  line-height: 30.3px;
+  margin-top: 20px;
+  min-height: 30px;
+  white-space: nowrap;
+  margin-left: 10px;
+}
+
+.f_-contact_-us {
+  align-items: flex-start;
+  display: flex;
+  flex-direction: column;
+  margin-left: 85px;
+  min-height: 150px;
+  width: 365px;
+}
+
+.contact-us {
+  letter-spacing: 0;
+  min-height: 21px;
+  width: 89px;
+}
+
+.flex-row {
+  align-items: center;
+  display: flex;
+  height: 30px;
+  margin-left: 8px;
+  margin-top: 19px;
+  min-width: 153px;
+}
+
+.icon-call,
+.outline-brands-whatsapp,
+.outline-brands-gmail,
+.icon-instagram,
+.icon-facebook {
+  height: 24px;
+  width: 24px;
+}
+
+.phone {
+  letter-spacing: 0;
+  line-height: 30.3px;
+  margin-left: 18px;
+  min-height: 30px;
+  min-width: 111px;
+  white-space: nowrap;
+}
+
+.flex-row-1 {
+  align-items: center;
+  display: flex;
+  height: 30px;
+  margin-left: 8px;
+  margin-top: 10px;
+  min-width: 153px;
+}
+
+.gmail-container {
+  align-items: center;
+  align-self: center;
+  display: flex;
+  height: 30px;
+  margin-left: 2px;
+  margin-top: 10px;
+  min-width: 351px;
+}
+
+.cinemomentweddingfilmsgmailcom {
+  letter-spacing: 0;
+  line-height: 30.3px;
+  margin-left: 18px;
+  min-height: 30px;
+  min-width: 309px;
+  white-space: nowrap;
+}
+
+.f_-follow_-us_-on {
+  align-items: flex-start;
+  display: flex;
+  flex-direction: column;
+  margin-left: 34px;
+  min-height: 147px;
+  width: 263px;
+}
+
+.follow-us-on {
+  letter-spacing: 0;
+  margin-left: 0;
+  min-height: 21px;
+  width: 105px;
+}
+
+.flex-row-2 {
+  align-items: center;
+  display: flex;
+  margin-top: 21px;
+  min-width: 241px;
+}
+
+.cinemomentweddingfilms {
+  letter-spacing: 0;
+  margin-bottom: 1px;
+  margin-left: 9px;
+  min-height: 21px;
+  min-width: 208px;
+}
+
+.flex-row-3 {
+  align-items: center;
+  display: flex;
+  margin-top: 17px;
+  min-width: 259px;
+}
+
+.cinemoment-wedding-films {
+  letter-spacing: 0;
+  margin-bottom: 1px;
+  margin-left: 9px;
+  min-height: 21px;
+  min-width: 226px;
+}
+
+/* Footer rect */
+.footer-rect {
+  position: relative;
+height: 293px;
+left: -0.07%;
+right: 0.07%;
+bottom: 0px;
+
+background: linear-gradient(91.92deg, rgba(128, 145, 255, 0.66) -0.94%, rgba(114, 255, 143, 0.66) 100%);
+
+}

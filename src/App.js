@@ -34,6 +34,7 @@ function App() {
       <Route path="/Ncreate" exact component={CreateNote} />
       <Route path="/single/:id" exact component={SingleView}/>
       </div>
+      <Footer/>
       </div>
     </Router>
   );
