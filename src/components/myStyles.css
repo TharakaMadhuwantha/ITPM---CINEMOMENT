@@ -1,0 +1,197 @@
+@import url("https://fonts.googleapis.com/css?family=Roboto:400");
+
+/* Menu-bar */
+.menu-bar {
+  align-items: flex-start;
+  display: flex;
+  position: absolute;
+  width: 990px;
+  height: 55px;
+  left: 225px;
+  top: 208px;
+}
+
+.overlap-group {
+  align-items: center;
+  background-color:  #FFFFFF;
+  border-radius: 12px;
+  box-shadow: 5px 5px 4px 
+#00000040;
+  display: flex;
+  height: 55px;
+  min-width: 240px;
+  padding: 0 87px;
+}
+
+.place {
+  position: absolute;
+left: 312px;
+right: 1063px;
+top: 225px;
+bottom: 1379px;
+
+font-family: 'Roboto';
+font-style: normal;
+font-weight: 400;
+font-size: 18px;
+line-height: 21px;
+/* identical to box height */
+
+
+color: #000000;
+}
+
+.overlap-group1 {
+  align-items: center;
+  background-color:  #FFFFFF;
+  border-radius: 12px;
+  box-shadow: 5px 5px 4px 
+#00000040;
+  display: flex;
+  height: 55px;
+  justify-content: flex-end;
+  margin-left: 10px;
+  min-width: 240px;
+  padding: 0 76px;
+}
+
+.booking {
+  position: absolute;
+left: 551px;
+right: 801px;
+top: 225px;
+bottom: 1379px;
+
+font-family: 'Roboto';
+font-style: normal;
+font-weight: 400;
+font-size: 18px;
+line-height: 21px;
+/* identical to box height */
+
+
+color: #000000;
+}
+
+.overlap-group2 {
+  align-items: center;
+  background-color:  #FFFFFF;
+  border-radius: 12px;
+  box-shadow: 5px 5px 4px 
+#00000040;
+  display: flex;
+  height: 55px;
+  justify-content: flex-end;
+  margin-left: 10px;
+  min-width: 240px;
+  padding: 0 50px;
+}
+
+.appointment {
+  letter-spacing: 0;
+  min-height: 21px;
+  width: 139px;
+}
+
+.overlap-group3 {
+  align-items: flex-start;
+  background-color:  #FFFFFF;
+  border-radius: 12px;
+  box-shadow: 5px 5px 4px 
+#00000040;
+  display: flex;
+  height: 55px;
+  justify-content: flex-end;
+  margin-left: 10px;
+  min-width: 240px;
+  padding: 13px 45px;
+}
+
+.event-handler {
+  letter-spacing: 0;
+  min-height: 28px;
+  width: 149px;
+}
+
+.span1 {
+  color: var(--black);
+  font-family: var(--font-family-roboto);
+  font-size: var(--font-size-l);
+  font-weight: 400;
+}
+
+/* Header rect */
+.header-rect {
+  position: absolute;
+height: 293px;
+left: 0%;
+right: 0%;
+top: 0px;
+
+background: linear-gradient(93.26deg, #6B69FF -14%, rgba(123, 253, 139, 0.776042) 99.86%, rgba(250, 248, 255, 0) 103.15%);
+
+}
+
+.cinemoment-logo-png-1 {
+  position: absolute;
+height: 371px;
+left: 33.89%;
+right: 33.89%;
+top: -100px;
+
+background: url(../logo.png);
+}
+
+/* Dropdown Button */
+.dropbtn {
+  align-items: center;
+  background-color:  #FFFFFF;
+  border-radius: 12px;
+  box-shadow: 5px 5px 4px 
+#00000040;
+  display: flex;
+  height: 55px;
+  min-width: 240px;
+  padding: 0 87px;
+  border-width: 0ch;
+  
+}
+
+/* The container <div> - needed to position the dropdown content */
+.dropdown {
+  position: absolute;
+  display: inline-block;
+  height: 55px;
+  left: 75.64%;
+  right: 14.00%;
+  top: 1px;
+  
+}
+
+
+/* Dropdown Content (Hidden by Default) */
+.dropdown-content {
+  display: none;
+  position: absolute;
+  background-color: #f1f1f1;
+  min-width: 240px;
+  box-shadow: 0px 8px 16px 0px rgba(0,0,0,0.2);
+  z-index: 10;
+}
+
+/* Links inside the dropdown */
+.dropdown-content a {
+  color: rgb(0, 0, 0);
+  padding: 12px 16px;
+  text-decoration: none;
+  display: block;
+}
+
+/* Change color of dropdown links on hover */
+.dropdown-content a:hover {background-color: #ddd;}
+
+/* Show the dropdown menu on hover */
+.dropdown:hover .dropdown-content {display: block;}
+
+/* Change the background color of the dropdown button when the dropdown content is shown */
+.dropdown:hover .dropbtn {background-color: #3e8e41;}
