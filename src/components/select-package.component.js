@@ -41,7 +41,7 @@ export default class EditPackage extends Component {
   }
 
   componentDidMount() {
-    axios.get('http://localhost:5000/packages/'+this.props.match.params.id)
+    axios.get('http://localhost:5001/packages/'+this.props.match.params.id)
       .then(response => {
         this.setState({
           packagename: response.data.packagename,
@@ -65,7 +65,7 @@ export default class EditPackage extends Component {
 
 
   deletePackage(id) {
-    axios.delete('http://localhost:5000/packages/'+id)
+    axios.delete('http://localhost:5001/packages/'+id)
       .then(response => { console.log(response.data)});
 
     this.setState({
@@ -129,7 +129,7 @@ export default class EditPackage extends Component {
 
     console.log(Package);
 
-    axios.post('http://localhost:5000/packages/update/' + this.props.match.params.id, Package)
+    axios.post('http://localhost:5001/packages/update/' + this.props.match.params.id, Package)
       .then(res => console.log(res.data));
 
     window.location = '/';

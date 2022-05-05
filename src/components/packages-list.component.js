@@ -26,7 +26,7 @@ export default class PackagesList extends Component {
   }
 
   componentDidMount() {
-    axios.get('http://localhost:5000/packages/')
+    axios.get('http://localhost:5001/packages/')
       .then(response => {
         this.setState({ packages: response.data })
       })
@@ -36,7 +36,7 @@ export default class PackagesList extends Component {
   }
 
   deletePackage(id) {
-    axios.delete('http://localhost:5000/packages/'+id)
+    axios.delete('http://localhost:5001/packages/'+id)
       .then(response => { console.log(response.data)});
 
     this.setState({
@@ -55,7 +55,7 @@ export default class PackagesList extends Component {
     const searchKey= e.currentTarget.value;
     console.log(searchKey);
 
-    axios.get('http://localhost:5000/packages/')
+    axios.get('http://localhost:5001/packages/')
       .then(response =>{     
         this.filterData(response.data,searchKey)
       })

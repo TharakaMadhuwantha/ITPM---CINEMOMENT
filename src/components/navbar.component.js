@@ -32,8 +32,8 @@ export default class Navbar extends Component {
                   <button class="dropbtn">Event Handler</button>
                   <div class="dropdown-content">
                     <a href='/create'>Add Package</a>
-                    <a href='#'>Add Note</a>
-                    <a href='#'>my Notes</a>
+                    <a href='/Ncreate'>Add Note</a>
+                    <a href='/notes'>my Notes</a>
                   </div>
                 </div>
               </div>
