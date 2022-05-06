@@ -30,6 +30,10 @@ app.use('/packages',packageRouter);
 const notesRouter = require('./routes/notes');
 app.use('/notes', notesRouter);
 
+/**Bookings routes */
+const bookingsRouter = require('./routes/bookings');
+app.use('/bookings', bookingsRouter);
+
 
 app.listen(5001, () => {
     console.log(`Server is up and running on port number: ${PORT}`)
