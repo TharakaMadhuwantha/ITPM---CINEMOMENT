@@ -23,8 +23,8 @@ export default class Navbar extends Component {
               <div class="dropdownnn">
                 <button class="dropbtnnn">Appointment</button>
                 <div class="dropdown-contenttt">
-                  <a href="#">Add Appointment</a>
-                  <a href="#">My Appointment</a>
+                  <a href="/Acreate">Add Appointment</a>
+                  <a href="/appointments">My Appointment</a>
                 </div>
               </div>
               

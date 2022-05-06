@@ -34,6 +34,10 @@ app.use('/notes', notesRouter);
 const bookingsRouter = require('./routes/bookings');
 app.use('/bookings', bookingsRouter);
 
+/**Appointments routes */
+const appointmentsRouter = require('./routes/appointments');
+app.use('/appointments', appointmentsRouter);
+
 
 app.listen(5001, () => {
     console.log(`Server is up and running on port number: ${PORT}`)

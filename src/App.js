@@ -19,7 +19,11 @@ import SingleView from "./components/single-view.component";
 import BookingsList from "./components/bookings-list.component";
 import EditBooking from "./components/edit-booking.component";
 import CreateBooking from "./components/create-booking.component";
-
+/**Appointment Components */
+import AppointmentsList from "./components/appointments-list.component";
+import EditAppointment from './components/edit-appointment.component';
+import CreateAppointment from './components/create-appointment.component';
+import SelectAppointment from './components/single-view';
 
 
 function App() {
@@ -44,6 +48,11 @@ function App() {
       <Route path="/bookings" exact component={BookingsList} />
       <Route path="/Bedit/:id" component={EditBooking} />
       <Route path="/Bcreate" component={CreateBooking} />
+
+      <Route path="/appointments" exact component={AppointmentsList} />
+      <Route path="/Aedit/:id" component={EditAppointment} />
+      <Route path="/Acreate" component={CreateAppointment} />
+      <Route path="/Aselect/:id" component={SelectAppointment} />
 
       </div>
       <Footer/>
