@@ -9,36 +9,48 @@ export default class Navbar extends Component {
     return (
       <div className="header">
 
-            <img className="header-rect" src="" />
-            <img className="cinemoment-logo-png-1" src={logo} alt="logo" />
-            <div className="container">
-              <div className="menu-bar">
-                <div className="overlap-group">
-                  <div>
-                    <Link to="/" className="placeroboto-normal-black-18px">Home </Link>
-                  </div>
+        <img className="header-rect" src="" />
+        <img className="cinemoment-logo-png-1" src={logo} alt="logo" />
+        <div className="container">
+          <div className="menu-bar">
+            <div className="overlap-group">
+              <div>
+                <Link to="/" className="placeroboto-normal-black-18px">Home </Link>
+              </div>
+            </div>
+            
+            
+              <div class="dropdownnn">
+                <button class="dropbtnnn">Appointment</button>
+                <div class="dropdown-contenttt">
+                  <a href="#">Add Appointment</a>
+                  <a href="#">My Appointment</a>
                 </div>
-                <div className="overlap-group1">
-                  <div>
-                    <Link to="#" className="bookingroboto-normal-black-18px">Booking</Link>
-                  </div>
-                </div>
-                <div className="overlap-group2">
-                  <div>
-                    <Link to="#" className="appointmentroboto-normal-black-18px">Appointment</Link>
-                  </div>
-                </div>
-                <div className="dropdown">
-                  <button class="dropbtn">Event Handler</button>
-                  <div class="dropdown-content">
-                    <a href='/create'>Add Package</a>
-                    <a href='/Ncreate'>Add Note</a>
-                    <a href='/notes'>my Notes</a>
-                  </div>
+              </div>
+              
+              
+
+              <div class="dropdownn">
+                <button class="dropbtnn">Booking</button>
+                <div class="dropdown-contentt">
+                  <a href="/Bcreate">Add Booking</a>
+                  <a href="/bookings">My Booking</a>
+
+              </div>
+             
+              <div className="dropdown">
+                <button class="dropbtn">Event Handler</button>
+                <div class="dropdown-content">
+                  <a href='/create'>Add Package</a>
+                  <a href='/Ncreate'>Add Note</a>
+                  <a href='/notes'>my Notes</a>
+
                 </div>
               </div>
             </div>
           </div>
+        </div>
+      </div>
     );
   }
 }

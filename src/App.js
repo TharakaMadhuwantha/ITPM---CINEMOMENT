@@ -15,6 +15,11 @@ import MyNotes from "./components/mynotes.component";
 import EditNote from "./components/edit-note.component";
 import CreateNote from "./components/create-note.component";
 import SingleView from "./components/single-view.component";
+/**Booking components */
+import BookingsList from "./components/bookings-list.component";
+import EditBooking from "./components/edit-booking.component";
+import CreateBooking from "./components/create-booking.component";
+
 
 
 function App() {
@@ -35,6 +40,11 @@ function App() {
       <Route path="/Nedit/:id" exact component={EditNote} />
       <Route path="/Ncreate" exact component={CreateNote} />
       <Route path="/single/:id" exact component={SingleView}/>
+
+      <Route path="/bookings" exact component={BookingsList} />
+      <Route path="/Bedit/:id" component={EditBooking} />
+      <Route path="/Bcreate" component={CreateBooking} />
+
       </div>
       <Footer/>
       </div>
