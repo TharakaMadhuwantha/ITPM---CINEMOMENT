@@ -13,7 +13,7 @@ const Appointment = props => (
     <td>{props.appointment.reason}</td>
     <td>{props.appointment.note}</td>
     <td>
-      <Link to={"/Aselect/"+props.appointment._id}>View</Link> | <a href="#" onClick={() => { props.deleteAppointment(props.appointment._id) }}>delete</a>
+      <Link className="btn btn-outline-warning" to={"/Aselect/"+props.appointment._id}><i className="fas fa-edit"></i>&nbsp;View</Link> | <a className="btn btn-outline-danger" href="#" onClick={() => { props.deleteAppointment(props.appointment._id) }}><i className="far fa-trash-alt"></i>&nbsp;Delete</a>
     </td>
   </tr>
 )
