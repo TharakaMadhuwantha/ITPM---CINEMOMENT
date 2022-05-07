@@ -11,7 +11,7 @@ const Package = props => (
     <td>{props.package.amount}</td>
     <td>{props.package.description}</td>
     <td>
-      <Link to={"/select/"+props.package._id}>View</Link> | <a href="#" onClick={() => { props.deletePackage(props.package._id) }}>Delete</a>
+      <Link className="btn btn-outline-warning" to={"/select/"+props.package._id}><i className="fas fa-edit"></i>&nbsp;View</Link> | <a className="btn btn-outline-danger" href="#" onClick={() => { props.deletePackage(props.package._id) }}><i className="far fa-trash-alt"></i>&nbsp;Delete</a>
     </td>
   </tr>
 )
@@ -38,6 +38,7 @@ export default class PackagesList extends Component {
   deletePackage(id) {
     axios.delete('http://localhost:5001/packages/'+id)
       .then(response => { console.log(response.data)});
+      alert("Package details deleted successfully");
 
     this.setState({
       packages: this.state.packages.filter(el => el._id !== id)
