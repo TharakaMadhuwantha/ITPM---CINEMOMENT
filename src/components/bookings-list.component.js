@@ -39,6 +39,7 @@ export default class BookingsList extends Component {
   deleteBooking(id) {
     axios.delete('http://localhost:5001/bookings/'+id)
       .then(response => { console.log(response.data)});
+      alert("Booking details deleted successfully");
 
     this.setState({
       bookings: this.state.bookings.filter(el => el._id !== id)
