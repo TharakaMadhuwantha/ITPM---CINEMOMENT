@@ -109,7 +109,7 @@ export default class MyNotes extends Component {
         <div class="input-group">
           <div class="form-outline">
           
-          <input id="search-focus" type="search"  class="form-control" placeholder='Search By Date' onChange={this.handleSearchArea}> </input>
+          <input id="search-focus" type="search"  class="form-control" placeholder='Search By Date' onChange={this.handleSearchArea}/> 
           </div>
         </div>
         <table className="table">
