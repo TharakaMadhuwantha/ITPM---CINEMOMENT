@@ -517,7 +517,7 @@ background: url(../logo.png);
 /*Search Bar*/
 .input-group{
   position: absolute;
-width: 320px;
+width: 321px;
 height: 36px;
 left: 1020px;
 top: 330px;
