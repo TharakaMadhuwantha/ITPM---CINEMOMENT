@@ -57,6 +57,7 @@ export default class CreateNote extends Component {
 
     axios.post('http://localhost:5001/notes/add', note)
       .then(res => console.log(res.data));
+      alert("Note details added successfully");
 
     window.location = '/notes';
   }

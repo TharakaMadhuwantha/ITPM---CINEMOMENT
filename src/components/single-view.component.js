@@ -27,6 +27,11 @@ export default class SingleView extends Component {
     this.props.history.push("/Nedit/"+ this.props.match.params.id ) ;
    
   }
+  onNavigateMyNote= () => {
+    
+    this.props.history.push("/notes") ;
+   
+  }
 
   componentDidMount() {
     axios.get('http://localhost:5001/notes/'+this.props.match.params.id)
@@ -117,7 +122,7 @@ export default class SingleView extends Component {
         </div>
         
         <div className="form-group">
-            <button onClick={this.onNavigateEditNote} className="btn btn-primary">Edit</button>
+            <button onClick={this.onNavigateEditNote} className="btn btn-primary"><i class="fa-solid fa-pen-to-square"></i>&nbsp;Edit</button> <button className="btn btn-primary" onClick={this.onNavigateMyNote}><i class="fa-solid fa-circle-arrow-left"></i>&nbsp;Back</button>
             
         </div>
 

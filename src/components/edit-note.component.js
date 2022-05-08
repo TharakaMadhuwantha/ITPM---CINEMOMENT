@@ -66,6 +66,7 @@ export default class EditNote extends Component {
 
     axios.post('http://localhost:5001/notes/update/' + this.props.match.params.id, note)
       .then(res => console.log(res.data));
+      alert("Note details updated successfully");
 
     window.location = '/notes';
   }
