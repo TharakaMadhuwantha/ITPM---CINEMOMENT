@@ -21,9 +21,9 @@ const Note = props => (
     {/* <td>{props.note.noteDes}</td> */}
     <td>{props.note.date.substring(0,10)}</td>
     <td>
-      <NavUnlisted>
-      <button className="btn btn-primary"><Link to={"/single/"+props.note._id} style={linkStyle}>View More</Link></button> | <a className="btn btn-danger" href="#" onClick={() => { props.deleteNote(props.note._id) }}><i className="far fa-trash-alt" ></i>&nbsp;Delete</a>
-      </NavUnlisted>
+      
+      <Link className="btn btn-outline-warning" to={"/single/"+props.note._id} ><i class="fa-solid fa-eye"></i>&nbsp;View More</Link> | <a className="btn btn-danger" href="#" onClick={() => { props.deleteNote(props.note._id) }}><i className="far fa-trash-alt" ></i>&nbsp;Delete</a>
+      
     </td>
   </tr>
 )
@@ -49,6 +49,7 @@ export default class MyNotes extends Component {
   deleteNote(id) {
     axios.delete('http://localhost:5001/notes/'+id)
       .then(response => { console.log(response.data)});
+      alert("Note details deleted successfully");
 
     this.setState({
       notes: this.state.notes.filter(el => el._id !== id)
