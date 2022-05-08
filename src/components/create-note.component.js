@@ -3,6 +3,8 @@ import axios from 'axios';
 import DatePicker from 'react-datepicker';
 import "react-datepicker/dist/react-datepicker.css";
 
+
+
 export default class CreateNote extends Component {
   constructor(props) {
     super(props);
@@ -16,12 +18,15 @@ export default class CreateNote extends Component {
       title: '',
       noteDes: '',
       date: new Date(),
+   
       
     }
   }
   onChangeTitle(e) {
+   
     this.setState({
       title: e.target.value
+
     })
   }
 
@@ -39,7 +44,9 @@ export default class CreateNote extends Component {
 
   onSubmit(e) {
     e.preventDefault();
-
+  
+    
+    
     const note = {
       title: this.state.title,
       noteDes: this.state.noteDes,
@@ -55,6 +62,7 @@ export default class CreateNote extends Component {
   }
 
   render() {
+    
     return (
     <div>
       <h3>Add Note</h3>
@@ -64,11 +72,12 @@ export default class CreateNote extends Component {
           <input type="text"
               required
               className="form-control"
+              
               value={this.state.title}
               onChange={this.onChangeTitle}
               />
               
-          
+
         </div>
         <div className="form-group"> 
           <label>Note: </label>
